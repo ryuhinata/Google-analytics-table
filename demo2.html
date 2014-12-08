@@ -1,0 +1,35 @@
+<!doctype html>
+<!-- Copyright (c) 2014 Google Inc. All rights reserved. -->
+<!-- This Demo is to test google-chart.html functionality. -->
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
+  <title>google-chart Demo</title>
+
+  <script src="../webcomponentsjs/webcomponents.min.js"></script>
+  <link rel="import" href="google-table.html">
+  <style>
+    code {
+      color: #007000;
+    }
+
+    google-chart {
+      height: 300px;
+      width: 400px;
+    }
+
+  </style>
+
+</head>
+<body unresolved>
+	<h1> This Demo is to test google chart functionality </h1>
+	<google-table
+		type='table'
+		options='{"showRowNumber" : true}'
+		cols ='[{"label": "Day", "type": "string"},{"label": "Date", "type": "number"},{"label": "Month", "type": "string"}]'
+		rows ='[["Monday", 1, "January"], ["Tuesday", 2, "February"]]'>
+	</google-table>
+
+
+</body>
+</html>
